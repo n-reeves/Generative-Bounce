@@ -1,7 +1,7 @@
 SndBuf buffer => LPF lpf => HPF hpf =>  dac;
 SndBuf buffer2 => LPF lpf2 => HPF hpf2 => Echo echo2 => dac;
-"YOURPATH/092_crunchy-analog-bounce.wav" => buffer.read;
-"YOURPATH/Kisses-92bpm-Ebm-mix.wav" => buffer2.read;
+me.dir() + "092_crunchy-analog-bounce.wav" => buffer.read;
+me.dir() + "Kisses-92bpm-Ebm-mix.wav" => buffer2.read;
 
 .8 => buffer.gain;
 .6 => buffer2.gain;
